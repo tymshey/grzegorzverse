@@ -1,0 +1,121 @@
+latin_missions_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = Z0B
+			tag = WRE
+		}
+	}
+
+	latin_the_dark_menace = {
+		icon = mission_pf_map_table
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			stability = 1
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = "t_lat_the_dark_menace"
+				duration = 1825
+			}
+		}
+	}
+
+	latin_the_city_has_fallen = {
+		icon = mission_city_of_the_world's_desire
+		position = 1
+		required_missions = { latin_the_dark_menace } 
+		provinces_to_highlight = {
+			province_id = 116
+			province_id = 115
+			province_id = 2980
+		}
+
+		trigger = {
+			116 = { owned_by = ROOT } 
+			115 = { owned_by = ROOT } 
+			2980 = { owned_by = ROOT } 
+			stability = 1
+		}
+
+		effect = {
+			6001 = {
+				cede_province = ROOT
+				add_devastation = 50
+			}
+			118 = { add_devastation = 50 } 
+			country_event = { id = flavor_lat.2 } 
+		}
+	}
+
+	latin_fire_and_ashes = {
+		icon = mission_fire_of_london
+		position = 1
+		required_missions = { latin_the_city_has_fallen } 
+		provinces_to_highlight = {
+			province_id = 121
+			province_id = 114
+			province_id = 101
+			province_id = 105
+			province_id = 108
+			province_id = 118
+		}
+
+		trigger = {
+			118 = { NOT = { devastation = 10 }  } 
+			121 = { owned_by = ROOT } 
+			114 = { owned_by = ROOT } 
+			101 = { owned_by = ROOT } 
+			105 = { owned_by = ROOT } 
+			108 = { owned_by = ROOT } 
+		}
+
+		effect = {
+			118 = {
+				add_province_modifier = {
+					name = "t_lat_aftermath"
+					duration = -1
+				}
+			}
+			6001 = {
+				add_province_modifier = {
+					name = "t_lat_aftermath"
+					duration = -1
+				}
+			}
+			country_event = { id = flavor_lat.3 } 
+		}
+	}
+
+	latin_new_hope = {
+		icon = complete_the_risorgimento
+		position = 1
+		required_missions = { latin_fire_and_ashes } 
+		provinces_to_highlight = {
+			province_id = 104
+			province_id = 4738
+			province_id = 109
+		}
+
+		trigger = {
+			104 = { owned_by = ROOT } 
+			4738 = { owned_by = ROOT } 
+			109 = { owned_by = ROOT } 
+			num_of_allies = 2
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "t_lat_new_hope"
+				duration = -1
+			}
+			add_manpower = 10
+		}
+	}
+}
