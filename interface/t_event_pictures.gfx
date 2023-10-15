@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "PAXROMANA"
+		texturefile = "gfx//event_pictures//roman//pax_romana_event.dds"
+	}
+}

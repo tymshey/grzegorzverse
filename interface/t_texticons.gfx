@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_text_calendar"
+		texturefile = "gfx/interface/ideas_EU4/t_calendar_small.dds"
+	}
+	spriteType = {
+		name = "GFX_text_temple"
+		texturefile = "gfx/interface/ideas_EU4/t_temple_icon_small.dds"
+	}
+}
