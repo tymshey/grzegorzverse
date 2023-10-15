@@ -1,0 +1,78 @@
+namespace = flavor_russland
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.1
+    title = flavor_russland.1.t
+    desc = flavor_russland.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+		name = flavor_russland.1.a
+       KIE = {
+		vassalize = MOL
+		}
+    }
+	
+	option = {
+		name = flavor_russland.1.b
+		KIE = {
+		add_casus_belli = {
+		target = MOL
+		type = cb_annex
+		months = 12
+		}
+		}
+	}
+}
+
+
+
+namespace = flavor_russland_2
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_russland.2
+    title = flavor_russland.2.t
+    desc = flavor_russland.2.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+    option = {
+	name = flavor_russland.2.a
+		create_alliance = KIE
+		284	= {
+			cede_province = KIE
+		}
+		285 = {
+			cede_province = KIE
+		}
+		2410 = {
+			cede_province = KIE
+		}
+    }
+	
+	option = {
+		name = flavor_russland.2.b
+		284 = {
+			add_permanent_claim = KIE 
+		}
+		285 = {
+			add_permanent_claim = KIE
+		}
+		2410 = {
+			add_permanent_claim = KIE
+		}
+		KIE = {
+			set_country_flag = Fund_crimean_rebels
+		}	
+	}
+}
+
+
+
+
+
+
+

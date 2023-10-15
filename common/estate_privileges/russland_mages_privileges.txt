@@ -1,0 +1,203 @@
+russland_mages_grant_land = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		OR = {
+			tag = KIE
+		}
+	}
+	loyalty = 0.05
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+russland_mages_old_knowledge = {
+	icon = privilege_admin_power
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.15
+	is_valid = {
+		OR = {
+			tag = KIE
+		}
+	}
+	loyalty = 0.1
+	penalties = {
+		
+	}
+	benefits = {
+		idea_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+russland_mages_magic_tactics = {
+	icon = privilege_admin_power
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		OR = {
+			tag = KIE
+		}
+	}
+	loyalty = -0.05
+	penalties = {
+		yearly_corruption = 0.10
+	}
+	benefits = {
+		land_attrition = -0.1
+		land_morale = 0.025
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+russland_mages_investmenst = {
+	icon = privilege_grant_new_world_charter
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.15
+	is_valid = {
+		OR = {
+			tag = KIE
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		development_cost_in_primary_culture = -0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+russland_mages_magic_warriors = {
+	icon = privilege_admin_power
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.20
+	is_valid = {
+		OR = {
+			tag = KIE
+		}
+	}
+	penalties = {
+	 	yearly_corruption = 0.05
+	}
+	benefits = {
+		morale_damage = 0.025
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+russland_mages_allow_magic_advisors = {
+	icon = privilege_empty_throne
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.10
+	is_valid = {
+		OR = {
+			tag = KIE
+		}
+	}
+	loyalty = 0.15
+	penalties = {
+	}
+	benefits = {
+		advisor_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			adm = 5
+		}
+	}
+}
+
+
+
+
+

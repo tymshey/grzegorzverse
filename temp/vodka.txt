@@ -1,0 +1,12 @@
+vodka = {
+	color = { 69 420 69 }
+	modifier = {
+		movement_speed = 0.05
+	}
+	province = {
+		production_efficiency = 0.05
+	}
+	chance = {
+		factor = 0	
+	}
+}

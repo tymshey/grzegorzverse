@@ -1,0 +1,10 @@
+on_startup = {
+	if = {
+		limit = {
+			tag = BYZ
+		}
+		country_event = {
+			id = flavor_rom.9
+		}
+	}
+}

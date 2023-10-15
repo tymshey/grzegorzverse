@@ -1,0 +1,6 @@
+HIS = "countries/Hispania.txt"
+WRE = "countries/WesternRomanEmpire.txt"
+HYP = "countries/Hyperborea.txt"
+HEL = "countries/Hel.txt"
+WAG = "countries/Wagner.txt"
+LAT = "countries/LatinEmpire.txt"
