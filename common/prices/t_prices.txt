@@ -1,5 +1,0 @@
-# Prices
-
-vodka = { 
-	base_price = 4 
-}
