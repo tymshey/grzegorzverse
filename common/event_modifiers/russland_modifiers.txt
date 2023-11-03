@@ -304,3 +304,24 @@
 	production_efficiency = 0.1
 	prestige = 1
 	}
+	
+	Develop_Dniepr = {
+	development_cost = -0.3
+	}
+	
+	Develop_Black_Sea = {
+	development_cost = -0.05
+	province_trade_power_modifier = 0.2
+	}
+	
+	Russo_gepidia_union = {
+	global_manpower_modifier = 0.1
+	prestige = 1
+	development_cost = -0.05
+	}
+	
+	Develop_Novogrod = {
+	development_cost = -0.1
+	trade_value_modifier = 0.2
+	province_trade_power_modifier = 0.1
+	}
