@@ -22,11 +22,13 @@ Russland_mission_1 = {
 		duration = -1
 		}
 		hidden_effect = {
+		may_return_manpower_on_disband = yes
 		 add_treasury = 100
 		 add_legitimacy = 10
 		 add_prestige = 10
 		 add_mercantilism = 2
 			set_country_flag = Grant_concesion_to_the_clergy
+			set_country_flag = Union_Gepidia
 			}
 		}
 		ai_weight = {
@@ -76,7 +78,7 @@ Russland_mission_211 = {
 					}
 				} 
 			}
-			change_religion = PER
+			change_religion = zoroastrian_group
 		}
 		else_if = {
 		limit = {
@@ -87,7 +89,7 @@ Russland_mission_211 = {
 					}
 				}
 			}
-			change_religion = BYZ
+			change_religion = orthodox
 				}
 			}
 		}
@@ -96,6 +98,192 @@ Russland_mission_211 = {
 		}
 	}
 }
+
+Development_mission_1 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Develop_the_Dniepr = {
+		icon = Legacy_of_Kievan_Rus
+		position = 2
+		
+		trigger = {
+		stability = 2
+		trade_income_percentage = 0.3
+		current_income_balance = 7
+		}
+		effect = {
+		1944 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		4542 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		2407 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		280 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		289 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		4115 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Development_mission_1 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Develop_Black_Sea_ports = {
+		icon = Legacy_of_Kievan_Rus
+		position = 3
+		required_missions = {Develop_the_Dniepr}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 282
+		province_id = 286
+		province_id = 1974
+		province_id = 2412
+		}
+		}
+		trigger = {
+		owns = 282
+		owns = 286
+		owns = 1974
+		owns = 2412
+		}
+		effect = {
+		2412 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		1974 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		282 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		286 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Development_mission_1 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	
+	}
+	has_country_shield = yes
+	
+	    Develop_Novogrod_Port = {
+		icon = Legacy_of_Kievan_Rus
+		position = 4
+		required_missions = {Develop_Black_Sea_ports}
+		provinces_to_highlight = {
+		OR = {
+		area = novgorod_area
+		area = karelia_area
+			}
+		} 
+		
+		trigger = {
+		novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		karelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		34 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		33 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		1961 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		30 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
 
 	T_RUS_branch = {
 	slot = 4
@@ -143,7 +331,7 @@ Russland_mission_211 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-			stability = 2
+			stability = 3
 		} 
 
 		effect = {
@@ -173,7 +361,7 @@ Russland_mission_211 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
-		stability = 2
+		stability = 3
 		}
 
 		effect = {
@@ -428,6 +616,9 @@ Russland_mission_7 = {
 		}
 		
 		trigger = {
+		Z1F = {
+		exists = no
+		}
 		owns = 1941
 		owns = 279
 		dominant_culture = ROOT
@@ -437,50 +628,19 @@ Russland_mission_7 = {
 		stability = 1
 		}
 		effect = {
-		hidden_effect = {
-		4538 = {
-			add_permanent_claim = ROOT
-		}
-		2424 = {
-			add_permanent_claim = ROOT
+			hidden_effect = {
+			4538 = {
+				add_permanent_claim = ROOT
+			}
+			2424 = {
+				add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+			name = Russo_gepidia_union
+			duration = -1
 			}
 		}
-		if = {
-		limit = {
-		Z1F = { exists = yes}
-		} 
-		add_country_modifier = {
-		 name = Union_with_gepidia
-		 duration -1
-		}
-		create_union = Z1F
-		set_country_flag = Union_Gepidia
-			}
-		else = {
-		281 = {
-		add_permanent_claim = ROOT
-		}
-		4539 = {
-		add_permanent_claim = ROOT
-		}
-		2962 = {
-		add_permanent_claim = ROOT
-		}
-		2961 = {
-		add_permanent_claim = ROOT
-		}
-		1940 = {
-		add_permanent_claim = ROOT
-		}
-		4541 = {
-		add_permanent_claim = ROOT 
-		}
-		261 = {
-		add_permanent_claim	= ROOT
-		}
-		set_country_flag = Union_Gepidia
-			}
-        }
 		ai_weight = {
 			factor = 500
 		}
