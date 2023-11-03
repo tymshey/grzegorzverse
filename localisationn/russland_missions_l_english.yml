@@ -394,9 +394,7 @@
  T_RUS_branch_slav_title:0 "Germano Slavic Future"
  T_RUS_branch_slav_desc:0 " "
  
- Develop_the_dniepr:0 "Dniepr Development"
- Develop_the_dniepr_title:0 "Develop the dniepr"
- Develop_the_dniepr_desc:0 " "
+ 
  
  Dev_mission:0 "We will use some of our treasury and manpower to expand the development of the dniepr river"
  Dev_mission_1:0 "Controling half of the black sea will surely bring us beneficts"
@@ -446,7 +444,7 @@
  
  Unity_with_the_slavs:0 "Unity with the slavs"
  
- slavic_cooperation:0 "slavic Cooperation"
+ slavic_cooperation:0 "Slavic Cooperation"
  
  Chossing_our_aliegences_title:0 "Choosing our allegiances"
  Chossing_our_aliegences_desc:0 " "
@@ -455,9 +453,25 @@
  
  t_kiev_palace:0 "Kiev Palace"
  
+ Develop_the_Dniepr_title:0 "Develop the Dniepr"
+ Develop_the_Dniepr_desc:0 " "
  
+ Develop_Black_Sea_ports_title:0 "Develop Black Sea Ports"
+ Develop_Black_Sea_ports_desc:0 " "
  
+ Develop_Novogrod_Port_title:0 "Develop Novogrod Port"
+ Develop_Novogrod_Port_desc:0 " "
  
+ Baltic_Sea_Ports_title:0 "Baltic Sea Ports"
+ Baltic_Sea_Ports_desc:0 " "
+ 
+ Develop_Dniepr:0 "Develop Dniepr"
+ 
+ Develop_Black_Sea:0 "Develop Black Sea"
+ 
+ Russo_gepidia_union:0 "Russo Gepidian Union"
+ 
+ Develop_Novogrod:0 "Develop Novogrod"
  
  
  
