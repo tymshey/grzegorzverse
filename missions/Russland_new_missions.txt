@@ -37,7 +37,7 @@ Russland_mission_1 = {
 	}
 }
 
-Russland_mission_211 = {
+Russland_mission_1 = {
 	slot = 5
 	generic = no 
 	ai = yes
@@ -46,51 +46,31 @@ Russland_mission_211 = {
 	}
 	has_country_shield = yes
 	
-	    Chossing_our_aliegences = {
-		icon = Legacy_of_Kievan_Rus
+	    AVE_ISRAEL = {
+		icon = jerusalem
 		position = 1
 		
 		trigger = {
-		OR = {
-		BYZ = {
-		has_opinion = {
-		who = KIE
-		value = 170
-			}
-		}
-		PER = {
-		has_opinion = {
-		who = KIE
-		value = 170
-					}
-				}
-			}
+		religion = jewish
 		}
 		effect = {
-		custom_tooltip = aliegences
-		hidden_effect = {
-		if = {
-		limit = {
-			PER = {
-			has_opinion = {
-			who = KIE
-			value = 170
-					}
-				} 
-			}
-			change_religion = zoroastrian_group
+		1854 = {
+		add_permanent_claim = ROOT
 		}
-		else_if = {
-		limit = {
-			BYZ = {
-			has_opinion = {
-			who = KIE
-			value = 170
-					}
-				}
-			}
-			change_religion = orthodox
-				}
+		364 = {
+		add_permanent_claim = ROOT
+		}
+		6004 = {
+		add_permanent_claim = ROOT
+		}
+		379 = {
+		add_permanent_claim = ROOT
+		}
+		6003 = {
+		add_permanent_claim = ROOT
+		}
+		6002 = {
+		add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -99,189 +79,13 @@ Russland_mission_211 = {
 	}
 }
 
-Development_mission_1 = {
-	slot = 5
-	generic = no 
-	ai = yes
-	potential = {
-		tag = KIE
-	}
-	has_country_shield = yes
-	
-	    Develop_the_Dniepr = {
-		icon = Legacy_of_Kievan_Rus
-		position = 2
-		
-		trigger = {
-		stability = 2
-		trade_income_percentage = 0.3
-		current_income_balance = 7
-		}
-		effect = {
-		1944 = {
-		add_province_modifier = {
-		name = Develop_Dniepr
-		duration = 10950
-			}
-		}
-		4542 = {
-		add_province_modifier = {
-		name = Develop_Dniepr
-		duration = 10950
-			}
-		}
-		2407 = {
-		add_province_modifier = {
-		name = Develop_Dniepr
-		duration = 10950
-			}
-		}
-		280 = {
-		add_province_modifier = {
-		name = Develop_Dniepr
-		duration = 10950
-			}
-		}
-		289 = {
-		add_province_modifier = {
-		name = Develop_Dniepr
-		duration = 10950
-			}
-		}
-		4115 = {
-		add_province_modifier = {
-		name = Develop_Dniepr
-		duration = 10950
-			}
-		}
-		}
-		ai_weight = {
-			factor = 500
-		}
-	}
-}
 
-Development_mission_1 = {
-	slot = 5
-	generic = no 
-	ai = yes
-	potential = {
-		tag = KIE
-	}
-	has_country_shield = yes
-	
-	    Develop_Black_Sea_ports = {
-		icon = Legacy_of_Kievan_Rus
-		position = 3
-		required_missions = {Develop_the_Dniepr}
-		provinces_to_highlight = {
-		OR = {
-		province_id = 282
-		province_id = 286
-		province_id = 1974
-		province_id = 2412
-		}
-		}
-		trigger = {
-		owns = 282
-		owns = 286
-		owns = 1974
-		owns = 2412
-		}
-		effect = {
-		2412 = {
-		add_province_modifier = {
-		name = Develop_Black_Sea
-		duration = -1
-			}
-		}
-		1974 = {
-		add_province_modifier = {
-		name = Develop_Black_Sea
-		duration = -1
-			}
-		}
-		282 = {
-		add_province_modifier = {
-		name = Develop_Black_Sea
-		duration = -1
-			}
-		}
-		286 = {
-		add_province_modifier = {
-		name = Develop_Black_Sea
-		duration = -1
-			}
-		}
-		}
-		ai_weight = {
-			factor = 500
-		}
-	}
-}
 
-Development_mission_1 = {
-	slot = 5
-	generic = no 
-	ai = yes
-	potential = {
-		tag = KIE
-	
-	}
-	has_country_shield = yes
-	
-	    Develop_Novogrod_Port = {
-		icon = Legacy_of_Kievan_Rus
-		position = 4
-		required_missions = {Develop_Black_Sea_ports}
-		provinces_to_highlight = {
-		OR = {
-		area = novgorod_area
-		area = karelia_area
-			}
-		} 
-		
-		trigger = {
-		novgorod_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		karelia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-		34 = {
-		add_province_modifier = {
-		name = Develop_Novogrod
-		duration = -1
-			}
-		}
-		33 = {
-		add_province_modifier = {
-		name = Develop_Novogrod
-		duration = -1
-			}
-		}
-		1961 = {
-		add_province_modifier = {
-		name = Develop_Novogrod
-		duration = -1
-			}
-		}
-		30 = {
-		add_province_modifier = {
-		name = Develop_Novogrod
-		duration = -1
-			}
-		}
-		}
-		ai_weight = {
-			factor = 500
-		}
-	}
-}
+
+
+
+
+
 
 
 
@@ -1714,3 +1518,508 @@ Ruthenien_missions_6 = {
 		}		
 	}
 }
+
+
+
+
+
+
+
+
+
+Russland_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Begin_Economic_growth = {
+		icon = Legacy_of_Kievan_Rus
+		position = 9
+		
+		trigger = {
+			current_income_balance = 20
+		}
+		effect = {
+		add_treasury = 200
+		add_country_modifier = {
+		name = Begin_Our_economic_growth
+		duration = 5475
+			}
+        }
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+Russland_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Search_for_rare_ores = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Economic_growth}
+		position = 10
+		
+		trigger = {
+		num_of_owned_provinces_with = {
+		value = 20
+		development = 20
+			}
+		}
+		effect = {
+		random_owned_province = {
+				limit = { 
+				development = 20
+				NOT = {
+				trade_goods = wheat
+					}
+				}
+				change_trade_goods = gold
+			}
+		random_owned_province = {
+				limit = { 
+				development = 20
+				NOT = {
+				trade_goods = wheat
+					}
+				}
+				change_trade_goods = gold
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Russland_mission_1 = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Resource_Mines = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Search_for_rare_ores}
+		position = 11
+		
+		trigger = {
+		all_owned_province = {
+		OR = {
+		NOT = { trade_goods = gold }
+		AND = {
+        num_of_times_improved_by_owner = 20
+					}
+				}
+			}
+		}
+		effect = {
+	every_owned_province = {
+			limit = {trade_goods = gold}
+			add_province_modifier = {
+			name = Gold_Rush
+			duration = -1
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Development_mission_1 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Develop_the_Dniepr = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Economic_growth}
+		position = 10
+		
+		trigger = {
+		stability = 2
+		trade_income_percentage = 0.3
+		current_income_balance = 7
+		}
+		effect = {
+		1944 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		4542 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		2407 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		280 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		289 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		4115 = {
+		add_province_modifier = {
+		name = Develop_Dniepr
+		duration = 10950
+			}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Development_mission_1 = {
+	slot = 2
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Develop_Black_Sea_ports = {
+		icon = Legacy_of_Kievan_Rus
+		position = 11
+		required_missions = {Develop_the_Dniepr}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 282
+		province_id = 286
+		province_id = 1974
+		province_id = 2412
+		}
+		}
+		trigger = {
+		owns = 282
+		owns = 286
+		owns = 1974
+		owns = 2412
+		}
+		effect = {
+		2412 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		1974 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		282 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		286 = {
+		add_province_modifier = {
+		name = Develop_Black_Sea
+		duration = -1
+			}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Russland_mission_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Develop_the_capital = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Economic_growth}
+		position = 10
+		
+		trigger = {
+		280 = {
+		num_of_times_improved_by_owner = 25
+		}
+		}
+		effect = {
+		280 = {
+		add_province_modifier = {
+		name =Big_building_in_kiev
+		duration = -1
+		}
+		}
+		
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+
+
+
+
+Development_mission_1 = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	
+	}
+	has_country_shield = yes
+	
+	    Develop_Novogrod_Port = {
+		icon = Legacy_of_Kievan_Rus
+		position = 11
+		required_missions = {Develop_the_Dniepr}
+		provinces_to_highlight = {
+		OR = {
+		area = novgorod_area
+		area = karelia_area
+			}
+		} 
+		
+		trigger = {
+		novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		karelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		34 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		33 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		1961 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		30 = {
+		add_province_modifier = {
+		name = Develop_Novogrod
+		duration = -1
+			}
+		}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+Russland_mission_1 = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Expand_The_Southern_Trade = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Economic_growth}
+		position = 10
+		
+		trigger = {
+		circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		astrakhan_area = {
+		num_of_times_improved_by_owner = 5
+		}
+		azov_area = {
+		num_of_times_improved_by_owner = 5
+		}
+		circassia_area = {
+		num_of_times_improved_by_owner = 5
+		}
+		effect = {
+		2413 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		286 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		2414 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}	
+		287 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		2195 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		463 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		2197 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		2201 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		2416 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		2417 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		464 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		466 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		468 = {
+		add_province_modifier {
+		name = Expand_The_Southern_Trade
+		duration = -1
+			}
+		}
+		
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+
+Russland_mission_1 = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential = {
+		tag = KIE
+	}
+	has_country_shield = yes
+	
+	    Develop_Our_Nation = {
+		icon = Legacy_of_Kievan_Rus
+		required_missions = {Begin_Economic_growth}
+		position = 10
+		
+		trigger = {
+		num_of_provinces_in_states = 40
+		}
+		effect = {
+		add_country_modifier = {
+		name = Develop_Our_Nation
+		duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+}
+
+
+
