@@ -1,11 +1,11 @@
 ﻿l_english:
 
- T_RUSSIA:0 "Holy Russian Empire"
- T_RUSSIA_ADJ:0 "Holy Russian Empire"
- T_RUTHENIEN:0 "Holy Ruthenien Empire"
- T_RUTHENIEN_ADJ:0 "Holy Ruthenien Empire"
- T_MOLDAVIEN:0 "Holy Moldavien Kingdom"
- T_MOLDAVIEN_ADJ:0 "Holy Moldavien Kingdom"
+ T_RUSSIA:0 "Russland Empire"
+ T_RUSSIA_ADJ:0 "Russland Empire"
+ T_RUTHENIEN:0 "Russland Empire"
+ T_RUTHENIEN_ADJ:0 "Russland Empire"
+ T_MOLDAVIEN:0 "Moldavien Kingdom"
+ T_MOLDAVIEN_ADJ:0 "Moldavien Kingdom"
  Stabilize_the_Nation_title:0 "Stabilize The Nation"
  Stabilize_the_Nation_desc:0  "The german empire has collapsed we need to act fast and secure control over our new nation"
  Start_the_process_to_prosperity_title:0 "Begin Reforms"
@@ -143,7 +143,7 @@
  T_FEMBOY:0 "Femboy Empire"
  T_FEMBOY_ADJ:0 "Femboy Empire"
  Femboy_empire_title:0 "Femboy Empire"
- Change_back_to_ruthenien_title:0 "Change back to Ruthenien"
+ Change_back_to_ruthenien_title:0 "Change back to Russland Empire"
  
  National_expansion:0 "National expansion"
  Southern_push:0 "Southern push"
