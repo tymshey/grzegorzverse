@@ -473,15 +473,32 @@
  
  Develop_Novogrod:0 "Develop Novogrod"
  
+ Begin_Economic_growth_title:0 "Begin Economic Growth"
+ Begin_Economic_growth_desc:0 " "
+ Resource_Mines_title:0 "Resource Mines"
+ Resource_Mines_desc:0 " "
+ Search_for_rare_ores_title:0 "Search For Rare Ores"
+ Search_for_rare_ores_desc:0 " "
+ Develop_the_capital_title:0 "Develop The Capital"
+ Develop_the_capital_desc:0 " "
  
+ Expand_The_Southern_Trade_title:0 "Expand The Southern Trade"
+ Expand_The_Southern_Trade_desc:0 " "
  
+ Steal_from_Persia_title:0 "Steal from Persia"
+ Steal_from_Persia_desc:0 " '
+ Develop_Our_Nation_title:0 "Develop Our Nation"
+ Develop_Our_Nation_desc:0 " "
  
+ Expand_The_Southern_Trade:0 "Expand The Southern Trade"
+ Develop_Our_Nation:0 "Develop Our Nation"
  
+ Big_building_in_kiev:0 "Big Building In Kiev"
  
+ Gold_Rush:0 "Gold Rush"
  
- 
- 
- 
+ AVE_ISRAEL_title:0 "AVE ISRAEL"
+ AVE_ISRAEL_desc:0 " "
  
  
  
