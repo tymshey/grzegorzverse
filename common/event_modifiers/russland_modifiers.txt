@@ -306,11 +306,11 @@
 	}
 	
 	Develop_Dniepr = {
-	development_cost = -0.3
+	local_development_cost = -0.2
 	}
 	
 	Develop_Black_Sea = {
-	development_cost = -0.05
+	local_development_cost = -0.05
 	province_trade_power_modifier = 0.2
 	}
 	
@@ -321,7 +321,26 @@
 	}
 	
 	Develop_Novogrod = {
-	development_cost = -0.1
+	local_development_cost = -0.1
 	trade_value_modifier = 0.2
 	province_trade_power_modifier = 0.1
+	}
+	
+	
+	Expand_The_Southern_Trade = {
+	province_trade_power_modifier = 0.05
+	local_development_cost = -0.05
+	}
+	
+	Develop_Our_Nation = {
+	development_cost = -0.05
+	}
+	
+	
+	Big_building_in_kiev = {
+	local_development_cost = -0.15
+	}
+	
+	Gold_Rush = {
+	local_production_efficiency = 0.2
 	}
