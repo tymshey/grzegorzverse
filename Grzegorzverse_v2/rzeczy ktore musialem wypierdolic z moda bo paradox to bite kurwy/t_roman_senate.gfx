@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_t_roman_senate_background"
+		texturefile = "gfx/interface/government_mechanics/t_roman_senate/roman_senate_background.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_t_roman_senate_adm"
+		texturefile = "gfx//interface//government_mechanics/t_roman_senate/roman_senate_adm.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_t_roman_senate_dip"
+		texturefile = "gfx//interface//government_mechanics/t_roman_senate/roman_senate_dip.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_t_roman_senate_mil"
+		texturefile = "gfx//interface//government_mechanics/t_roman_senate/roman_senate_mil.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_imperial_grasp_power_bar"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/government_mechanics/t_roman_senate/imperial_grasp_progress_bar.dds"
+		textureFile2 = "gfx/interface/government_mechanics/t_roman_senate/imperial_grasp_progress_bar_empty.dds"
+		size = { x = 267 y = 20 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+}

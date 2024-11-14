@@ -1,0 +1,21 @@
+vassal=
+{
+	first="PER"
+	second="ARD"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+vassal=
+{
+	first="PER"
+	second="LRI"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+#dependency = { # icon wont work (thank you paradox u fucking niggers)
+#	subject_type = "t_satrapy_vassal"
+#	first = "PER"
+#	second = "KHO"
+#	start_date = 1444.1.1
+#	end_date = 1644.4.22
+#}
