@@ -1,0 +1,46 @@
+hispania_missions_2 = {
+
+	slot = 2
+	
+	has_country_shield = yes
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = HIS
+	}
+	
+	t_hispania_conquer_andalusia = {
+	
+		icon = mission_empire
+		
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = extremadura_area
+				area = toledo_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			extremadura_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			toledo_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			iberia_region = {
+				add_permanent_claim = ROOT
+				type = all
+			}
+		}
+	}
+	
+}
